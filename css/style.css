@@ -1,0 +1,385 @@
+/* 整体 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #f5fffa;
+  margin: 0;
+}
+
+div.inner {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+header {
+  height: 80px;
+  background-color: #33ccff;
+  position: relative;
+} /* 运用相对定位布局为内部绝对定位元素提供参考点 */
+
+header h1 {
+  margin: 0;
+  color: #fff5ee;
+  font-size: 35px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+} /* 运用绝对定位布局实现标题的垂直居中 */
+
+nav {
+  background-color: cornflowerblue;
+  height: 50px;
+}
+
+nav .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+} /* 运用Flexbox布局实现导航项水平居中 */
+
+nav .nav-list {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  display: flex;
+  gap: 200px;
+}
+
+nav .nav-list li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav .nav-list li a:hover {
+  color: rgb(235, 251, 8);
+}
+
+nav .nav-list li a.active {
+  color: rgb(235, 251, 8);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(235, 251, 8);
+}
+
+#background img {
+  width: 100%;
+  display: block;
+}
+
+/* 首页 */
+#container {
+  background-color: #e5f3ff;
+  padding: 60px 0;
+}
+
+#container .inner {
+  display: flex;
+  background-color: #fff5ee;
+  padding: 50px 30px;
+  overflow: auto;
+} /* 运用Flexbox布局实现左右分栏 */
+
+#container .inner .left_sidebar {
+  width: 30%;
+  text-align: center;
+  padding-right: 25px;
+  border-right: 2.5px solid #d3d3d3b6;
+  padding-top: 10px;
+} /* 运用盒模型控制元素间距，排列页面元素 */
+
+#container .inner .left_sidebar .name {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+#container .inner .left_sidebar .myimage img {
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+}
+
+#container .inner .left_sidebar .info-list {
+  text-align: left;
+  padding-left: 50px;
+  line-height: 30px;
+  color: black;
+  list-style: disc;
+}
+
+#container .inner .right_content {
+  width: 70%;
+  padding-left: 25px;
+}
+
+#container .inner .right_content .self {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+#container .inner .right_content .self h3 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+#container .inner .right_content .self h3 span {
+  color: orange;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#container .inner .right_content .self p {
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #16121299;
+}
+
+#container .inner .right_content .life h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#container .inner .right_content .life span {
+  color: orange;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+#container .inner .right_content .life ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -8px;
+  margin-right: -8px;
+} /* 运用Flexbox布局实现图片横向均匀分布 */
+
+#container .inner .right_content .life ul li {
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* 个人信息 */
+.right_info .information {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+
+.right_info .information h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.right_info .information h3 span {
+  color: orange;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  line-height: 50px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+td {
+  border: 1.5px solid #a0a0a0;
+  padding-left: 20px;
+  color: #1b1a1a;
+  width: 50%;
+}
+
+/* 我的爱好 */
+.left_sidebar .hobby_menu {
+  margin-bottom: 30px;
+}
+
+.left_sidebar .hobby_menu h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+}
+
+.left_sidebar .hobby_menu h1 span {
+  color: orange;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.left_sidebar .hobby_menu ul li {
+  margin-bottom: 20px;
+}
+
+.left_sidebar .hobby_menu ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+}
+
+.left_sidebar .hobby_menu ul li a:hover,
+.left_sidebar .hobby_menu ul li a.active {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.left_sidebar .hobby_quote {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.left_sidebar .hobby_quote blockquote {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #0d0101;
+}
+
+.left_sidebar .hobby_quote .quote_author {
+  text-align: right;
+  color: #0d0101;
+  font-size: 14px;
+}
+
+.right_hobby {
+  float: right;
+  width: 70%;
+  padding-left: 30px;
+} /* 运用浮动布局确保右侧内容区与左侧边栏并排显示，避免布局塌陷 */
+
+.right_hobby .hobby_section {
+  margin-bottom: 30px;
+}
+
+.right_hobby .hobby_section.active {
+  opacity: 1;
+}
+
+.right_hobby .hobby_section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+  position: relative;
+}
+
+.right_hobby .photography_container,
+.right_hobby .sports_container,
+.right_hobby .competition_container {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+} /* 运用Grid布局创建三列等宽网格实现图片均匀整齐排列 */
+
+.right_hobby .photography_container img,
+.right_hobby .sports_container img,
+.right_hobby .competition_container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hobby_section p {
+  color: #0a0101;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* 联系我 */
+.right_form {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 50px;
+}
+
+.right_form .contact h3 {
+  margin-bottom: 20px;
+}
+.right_form .contact h3 span {
+  color: orange;
+  margin-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.right_form .form {
+  display: table;
+  width: 600px;
+  border-collapse: collapse;
+} /* 运用表格布局，通过display: table和display: table-row/cell模拟表格结构，实现表单元素的行列对齐 */
+
+.right_form .form .tableRow {
+  display: table-row;
+}
+
+.right_form .form .tableRow .heading {
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.right_form .form .tableRow p {
+  font-size: 16px;
+  display: table-cell;
+  vertical-align: top;
+  padding: 8px;
+}
+
+.right_form .form .tableRow p:first-child {
+  text-align: right;
+}
+
+.right_form .form .tableRow textarea {
+  width: 300px;
+  height: 100px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right_form .form .tableRow input[type="submit"] {
+  background-color: #009cf6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.right_form .form .tableRow input[type="submit"]:hover {
+  background-color: #334ee6;
+}
+
+footer {
+  color: white;
+  background-color: dodgerblue;
+  padding: 25px;
+  text-align: center;
+}

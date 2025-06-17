@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联系我</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>张铭洋个人网页</h1>
+      </div>
+    </header>
+
+    <nav>
+      <div class="inner">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="information.html">个人信息</a></li>
+          <li><a href="hobby.html">我的爱好</a></li>
+          <li><a href="contactme.html" class="active">联系我</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="background">
+      <img src="./image/背景1.jpg" alt="" />
+    </section>
+
+    <section id="container">
+      <div class="inner">
+        <aside class="left_sidebar">
+          <div class="myimage">
+            <img src="./image/证件照.jpg" alt="" />
+          </div>
+          <h2 class="name">张铭洋</h2>
+          <ul class="info-list">
+            <li>性别：女</li>
+            <li>年龄：20岁</li>
+            <li>家乡：内蒙古包头市</li>
+            <li>籍贯：湖南省怀化市</li>
+            <li>专业：信息安全</li>
+            <li>联系方式：13030486226</li>
+            <li>邮箱：1419463414@qq.com</li>
+          </ul>
+        </aside>
+
+        <div class="right_form">
+          <div class="contact">
+            <h3>
+              联系我
+              <span> Contact Me </span>
+            </h3>
+          </div>
+
+          <div class="form">
+            <div class="tableRow">
+              <p class="heading">您的基本信息</p>
+              <p></p>
+            </div>
+
+            <div class="tableRow">
+              <p>姓名：</p>
+              <p>
+                <input
+                  type="text"
+                  name="name"
+                  value=""
+                  placeholder="请输入您的姓名"
+                  required
+                />
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p>和我的关系：</p>
+              <p>
+                <select name="关系">
+                  <option value="家人">家人</option>
+                  <option value="朋友">朋友</option>
+                  <option value="同学">同学</option>
+                  <option value="老师">老师</option>
+                  <option value="其他">其他</option>
+                </select>
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p>留言主题：</p>
+              <p>
+                <input
+                  type="radio"
+                  name="type"
+                  value="日常&生活"
+                  checked
+                />日常&生活<br />
+                <input
+                  type="radio"
+                  name="type"
+                  value="学术&专业"
+                />学业&专业<br />
+                <input type="radio" name="type" value="其他" />其他
+              </p>
+            </div>
+
+            <div class="tableRow label">
+              <p>留言日期：</p>
+              <p><input type="date" name="date" /></p>
+            </div>
+
+            <div class="tableRow">
+              <p>电话号码：</p>
+              <p>
+                <input
+                  type="tel"
+                  name="phone"
+                  value=""
+                  placeholder="请输入您的电话号码"
+                  required
+                />
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p>邮箱：</p>
+              <p>
+                <input
+                  type="email"
+                  name="email"
+                  value=""
+                  placeholder="请输入您的邮箱"
+                  required
+                />
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p>留言内容：</p>
+              <p>
+                <textarea name="comments"></textarea>
+              </p>
+            </div>
+
+            <div class="tableRow">
+              <p></p>
+              <p><input type="submit" value="现在提交" /></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="inner">
+        <p>2025&nbsp;&nbsp;&nbsp;个人网站. 保留所有权利.</p>
+      </div>
+    </footer>
+  </body>
+</html>
